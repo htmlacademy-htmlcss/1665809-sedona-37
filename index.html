@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="main-header">
+      <nav class="navigation">
+        <a href="#" class="logo">
+          <img src="img/logo.svg" height="70" width="140" alt="Логотип Седоны">
+        </a>
+        <!--нужны ли классы на ссылках внутри навигации?-->
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#features-id" class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="hotels.html"  class="navigation-link">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item icon-search">
+          <button>
+            <span class="visual-hidden">Поиск</span>
+          </button>
+        </li>
+        <li class="navigation-user-item icon-favorite">
+          <a href="">
+            <span class="visual-hidden">Избранное</span>
+          </a>
+        </li>
+        <!--одинаковый или разный класс у кнопки и иконок польз. меню?-->
+        <li class="navigation-user-item">
+          <button class="button-search-hotel">
+            Хочу сюда!
+          </button>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="hero">
+        <!--на каком языке лучше писать заголовок? Лучше так или заголовок h1 SEDONA ?-->
+        <h1 class="visual-hidden">Седона</h1>
+        <p class="hero-title">Sedona</p>
+        <img src="empty.jpg" height="300" width="700" alt="Welcome to the gorgeous Sedona">
+      </section>
+      <section class="features" id="features-id">
+        <h2 class="visual-hidden">Преимущества Седоны</h2>
+        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="features-list">
+          <li class="features-item transparent-100">
+            <p>Настоящий городок</p>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="empty.jpg" alt="Фото домов в Седоне">
+          </li>
+          <li class="features-item transparent-12">
+            <p>Небольшая площадь</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="features-item transparent-20">
+            <p>Красивая дорога</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features-item transparent-12">
+            <p>Мало туристов</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="features-item transparent-100">
+            <img src="empty.jpg" alt="Фото моста дьявола">
+            <p>Там есть мост дьявола</p>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
+        <p>Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p>Опытный персонал и качественное обслуживание!</p>
+        <ul class="recommendations-list">
+          <li class="recommendations-item recommendations-item-house transparent-12">
+            <p>Жильё</p>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="recommendations-item recommendations-item-food transparent-0">
+            <p>Еда</p>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="recommendations-item recommendations-item-souvenir transparent-12">
+            <p>Сувениры</p>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search-hotel">
+        <h2 class="visual-hidden">Поиск гостиницы в Седоне</h2>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button-search-hotel">Поиск гостиницы в Седоне</button>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="subscribe subscribe-main-page">
+        <h2 class="main-footer-subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="main-footer-subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email">
+          <input type="submit" value="Подписаться">
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visual-hidden">Седона контактная информация</h2>
+        <ul class="contacts-social-list">
+          <li class="contacts-social-item">
+            <a href="https://vk.com/htmlacademy" class="button-social">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="contacts-social-item">
+            <a href="https://t.me/htmlacademy" class="button-social">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="contacts-social-item">
+            <a href="https://www.youtube.com/user/htmlacademyru" class="button-social">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <!--нужен ли класс на ссылке?-->
+        <address class="contacts-adress">
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <a href="https://htmlacademy.ru/" class="htmlacademy-logo">
+          <img src="img/logo_htmlacademy.svg" height="33" width="115" alt="Логотип htmlacademy">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
